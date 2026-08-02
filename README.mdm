@@ -1,9 +1,24 @@
 # 📊 Análisis Integral de Ventas en la Industria Tabacalera
 
-## Descripción
+##1.Descripción
 
-Proyecto de análisis de datos enfocado en comprender el comportamiento de las ventas en la industria tabacalera aplicando la metodología de ciencia de datos.
+Este espacio documenta el proceso de desarrollo de un proyecto de análisis de datos de principio a fin. Incluye la comprensión del problema de negocio, la recolección y preparación de los datos, el análisis, la visualización de resultados y la generación de recomendaciones basadas en un caso de estudio sobre el comportamiento comercial de las ventas en la industria tabacalera.
 
+##Contexto del negocio
+La industria tabacalera desarrolla sus actividades comerciales mediante diferentes canales de distribución y venta, entre ellos la preventa, con el objetivo de garantizar la disponibilidad de sus productos y atender la demanda de los clientes en una región determinada.
+
+Como resultado de estas operaciones, se genera información relacionada con el comportamiento de las ventas, la cual permite analizar tendencias, evaluar el desempeño comercial e identificar oportunidades para apoyar la toma de decisiones
+
+#Problemática
+La compañía requiere fortalecer el seguimiento y control de los indicadores clave de desempeño (KPIs) relacionados con el canal de comercialización por preventa. Actualmente, no cuenta con una visión consolidada que permita monitorear el estado de las entregas, identificar las principales causas de rechazo de los pedidos y evaluar el desempeño comercial en las diferentes regiones.
+
+Como consecuencia, resulta más difícil identificar los mercados con mayor impacto, reconocer patrones en los rechazos y establecer estrategias orientadas a mejorar la efectividad de las entregas. A partir de este análisis se busca generar información que facilite la toma de decisiones y contribuya a definir acciones de mejora basadas en evidencia.
+
+🎯 Objetivo general
+❓ Preguntas de negocio
+📂 Fuentes de datos
+🧭 Metodología del proyecto
+📅 Roadmap o progreso
 ## Estado del proyecto
 
 🟢 En desarrollo
