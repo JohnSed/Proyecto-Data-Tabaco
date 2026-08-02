@@ -1,8 +1,26 @@
 # 📊 Análisis Integral de Ventas en la Industria Tabacalera
 
+## 📑 Contenido
+
+- Descripción
+- Contexto del negocio
+- Problemática
+- Objetivo general
+- Preguntas de negocio
+- Fuentes de datos
+- Metodología
+- Herramientas
+- KPIs
+- Dashboard
+- Modelo predictivo
+- Resultados
+- Recomendaciones
+- Conclusiones
+- Próximos pasos
+
 ## 📖 Descripción
 
-Este espacio documenta el proceso de desarrollo de un proyecto de análisis de datos de principio a fin. Incluye la comprensión del problema de negocio, la recolección y preparación de los datos, el análisis, la visualización de resultados y la generación de recomendaciones basadas en un caso de estudio sobre el comportamiento comercial de las ventas en la industria tabacalera.
+Este espacio documenta el proceso de desarrollo de un proyecto de análisis de datos de principio a fin. Incluye la comprensión del problema de negocio, la recolección y preparación de los datos, el análisis, la visualización de resultados y la generación de recomendaciones basadas en un caso de estudio sobre el comportamiento del proceso comercial y de entregas en la industria tabacalera.
 
 **Nota:** Este proyecto utiliza un conjunto de datos sintético desarrollado con Python. Aunque la estructura y la lógica del negocio están inspiradas en un escenario real, toda la información fue modificada y generada con fines educativos y de portafolio, preservando la confidencialidad de los datos originales.
 
@@ -11,6 +29,8 @@ La industria tabacalera desarrolla sus actividades comerciales mediante diferent
 
 Como resultado de estas operaciones, se genera información relacionada con el comportamiento de las ventas, la cual permite analizar tendencias, evaluar el desempeño comercial e identificar oportunidades para apoyar la toma de decisiones
 
+La información generada durante este proceso constituye la base para evaluar el desempeño comercial y operacional, facilitando la identificación de oportunidades de mejora en la gestión de las ventas y las entregas.
+
 ## ❗ Problemática
 La compañía requiere fortalecer el seguimiento y control de los indicadores clave de desempeño (KPIs) relacionados con el canal de comercialización por preventa. Actualmente, no cuenta con una visión consolidada que permita monitorear el estado de las entregas, identificar las principales causas de rechazo de los pedidos y evaluar el desempeño comercial en las diferentes regiones.
 
@@ -18,7 +38,7 @@ Como consecuencia, resulta más difícil identificar los mercados con mayor impa
 
 ## 🎯 Objetivo general
 
-Desarrollar un caso de estudio de análisis de datos basado en un conjunto de datos sintético que represente el proceso de ventas del canal de preventa en la industria tabacalera, con el propósito de analizar el comportamiento de las entregas y los rechazos, fortalecer el seguimiento de los indicadores de gestión y generar recomendaciones que apoyen la toma de decisiones.
+Desarrollar una solución analítica de datos basado en un conjunto de datos sintético que represente el proceso de ventas del canal de preventa en la industria tabacalera, con el propósito de analizar el comportamiento de las entregas y los rechazos, fortalecer el seguimiento de los indicadores de gestión y generar recomendaciones que apoyen la toma de decisiones.
 
 ## ❓ Preguntas de negocio
 
@@ -45,27 +65,54 @@ Desarrollar un caso de estudio de análisis de datos basado en un conjunto de da
 11. ¿Qué proyección presentan las ventas y la efectividad de las entregas para los próximos períodos, con base en el comportamiento histórico de los datos?
 
 ---
-
-## 📂 Fuentes de datos
+## 📂 Conjunto de datos
 
 *Pendiente.*
-
 ---
 
 ## 🛠️ Metodología del proyecto
 
 *Pendiente.*
-
 ---
 
-## 📈 Resultados
+## 🛠️ Herramientas
 
 *Pendiente.*
+---
 
+## 📊 KPIs
+
+*Pendiente.*
+---
+
+## 📈 Dashboard
+
+*Pendiente.*
+---
+
+## 🤖 Modelo predictivo (Pronóstico)
+
+*Pendiente.*
+---
+
+## 📊 Resultados del análisis
+
+*Pendiente.*
+---
+
+## 💡 Recomendaciones
+
+*Pendiente.*
 ---
 
 ## 💡 Conclusiones
 
+*Pendiente.*
+---
+## 🚀 Próximos pasos
+
+*Pendiente.*
+---
 
 ## Estado del proyecto
 
