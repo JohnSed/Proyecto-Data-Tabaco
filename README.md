@@ -40,6 +40,10 @@ Desarrollar un caso de estudio de análisis de datos basado en un conjunto de da
 
 9. ¿Qué estrategias podrían implementarse para recuperar las ventas perdidas por motivos de rechazo y mejorar los indicadores de ventas y entregas?
 
+10. ¿Qué indicadores clave de desempeño (KPIs) permiten monitorear y evaluar la eficiencia del proceso de ventas y entregas del canal de preventa?
+
+11. ¿Qué proyección presentan las ventas y la efectividad de las entregas para los próximos períodos, con base en el comportamiento histórico de los datos?
+
 ---
 
 ## 📂 Fuentes de datos
