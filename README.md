@@ -16,9 +16,7 @@ Como consecuencia, resulta más difícil identificar los mercados con mayor impa
 
 ## 🎯 Objetivo general
 
-*Pendiente.*
-
----
+Analizar el comportamiento de las ventas del canal de preventa mediante el estudio de los indicadores de entregas y rechazos, con el propósito de identificar oportunidades de mejora, fortalecer el seguimiento de los KPIs comerciales y apoyar la toma de decisiones estratégicas.
 
 ## ❓ Preguntas de negocio
 
