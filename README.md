@@ -22,7 +22,23 @@ Desarrollar un caso de estudio de análisis de datos basado en un conjunto de da
 
 ## ❓ Preguntas de negocio
 
-*Pendiente.*
+1. ¿Cuál es el porcentaje de efectividad de las entregas realizadas mediante el modelo de venta de preventa?
+
+2. ¿Cuál es la distribución de los estados de los pedidos (entregados, rechazados y reagendados)?
+
+3. ¿Cuáles son los principales motivos de rechazo que afectan la entrega de los pedidos?
+
+4. ¿Qué categorías de clientes presentan la mayor efectividad y el mayor porcentaje de rechazos?
+
+5. ¿Qué regiones presentan el mejor y el peor desempeño en la efectividad de las entregas?
+
+6. ¿Qué comportamiento presentan los pedidos reagendados y cuál es su impacto en la efectividad del proceso?
+
+7. ¿Existen tendencias en la efectividad de las entregas y los rechazos a lo largo del tiempo?
+
+8. ¿Qué oportunidades de mejora pueden identificarse para incrementar la efectividad de las entregas y reducir los rechazos?
+
+9. ¿Qué estrategias podrían implementarse para recuperar las ventas perdidas por motivos de rechazo y mejorar los indicadores de ventas y entregas?
 
 ---
 
