@@ -1,6 +1,7 @@
 #IMPORTAR LIBRERÍAS
 import pandas as pd
 import numpy as np
+import streamlit as st
 #UBICACIÓN DEL ARCHIVO ORIGINAL
 DP = r"D:\Proyectos\Data\Datos Preventa.xlsx"
 DN = pd.read_excel(DP,sheet_name="Ordenado")
@@ -25,3 +26,9 @@ print("Mayor cantidad de registros por fecha:", CF.max())
 print("Día con menos registros:", CF.idxmin())
 #Menor cantidad de registros por fecha
 print("Menor cantidad de registros por fecha:", CF.min())
+Categorias=DN["Tipo Visita"].value_counts()
+print("Cantidad de registros por tipo de Visita:", Categorias)
+st.set_page_config(page_title="Análisis de Datos Preventa", page_icon="📊", layout="wide")
+@st.cache_data
+def get_data():
+    return DN
