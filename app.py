@@ -94,16 +94,41 @@ st.markdown(
 # ============================================================
 
 st.header("📌 Información general")
+#  Filtros de fecha y ciudad disponibles en la barra lateral.
+st.sidebar.header("📅 Filtro de fecha")
+fecha_minima = DN["Fecha"].min().date()
+fecha_maxima = DN["Fecha"].max().date()
+Fecha_Filtro= st.sidebar.date_input(
+    "Seleccione un rango de fechas:",
+    value=(fecha_minima, fecha_maxima),
+    min_value=fecha_minima,
+    max_value=fecha_maxima
+)
+st.sidebar.header("📌 Ciudad")
+Ciudades=sorted(DN["Ciudad"].dropna().unique())
+Ciudad_seleccionado = st.sidebar.multiselect(
+    "Seleccione una Ciudad:",
+    options=Ciudades,
+    default=Ciudades
+)
+st.sidebar.header("📌 Lideres")
+Lideres=sorted(DN["Lider PMI"].dropna().unique())
+lider_seleccionado = st.sidebar.multiselect(
+    "Seleccione un Líder:",
+    options=Lideres,
+    default=Lideres
+)
+fecha_inicio, fecha_fin = Fecha_Filtro
+DN_filtrado = DN[
+    (DN["Fecha"].dt.date >= fecha_inicio) &
+    (DN["Fecha"].dt.date <= fecha_fin)&
+    (DN["Ciudad"].isin(Ciudad_seleccionado)) &
+    (DN["Lider PMI"].isin(lider_seleccionado))
+]
 
-
-fecha_minima = DN["Fecha"].min()
-
-fecha_maxima = DN["Fecha"].max()
-Cantidad_Rechazo= DN["Estado Pws"].value_counts().get("Rechazado", 0)
-
-cantidad_registros = len(DN)
-
-cantidad_tipos_visita = DN["Tipo Visita"].nunique()
+Cantidad_Rechazo= DN_filtrado["Estado Pws"].value_counts().get("Rechazado", 0)
+cantidad_registros = len(DN_filtrado)
+cantidad_tipos_visita = DN_filtrado["Tipo Visita"].nunique()
 
 
 # ============================================================
@@ -111,7 +136,6 @@ cantidad_tipos_visita = DN["Tipo Visita"].nunique()
 # ============================================================
 
 col1, col2, col3, col4, col5 = st.columns(5)
-
 
 with col1:
 
@@ -125,7 +149,7 @@ with col2:
 
     st.metric(
         label="📅 Fecha mínima",
-        value=fecha_minima.strftime("%d/%m/%Y")
+        value=fecha_inicio.strftime("%d/%m/%Y")
     )
 
 
@@ -133,7 +157,7 @@ with col3:
 
     st.metric(
         label="📅 Fecha máxima",
-        value=fecha_maxima.strftime("%d/%m/%Y")
+        value=fecha_fin.strftime("%d/%m/%Y")
     )
 
 
@@ -168,7 +192,7 @@ with col1:
     st.write("**Cantidad de filas:**")
 
     st.write(
-        len(DN)
+        len(DN_filtrado)
     )
 
 
@@ -177,7 +201,7 @@ with col2:
     st.write("**Cantidad de columnas:**")
 
     st.write(
-        len(DN.columns)
+        len(DN_filtrado.columns)
     )
 
 
@@ -194,16 +218,35 @@ st.write(
 
 st.header("📅 Registros por fecha")
 
-
+# Registros por fecha y ciudad
 CF = (
-    DN["Fecha"]
-    .value_counts()
+    DN_filtrado
+    .groupby(["Fecha","Lider PMI"])
+    .size()
+    .unstack(fill_value=0)
     .sort_index()
 )
 
+# Registros por fecha y estado
+CR = (
+    DN_filtrado
+    .groupby(["Fecha", "Estado Pws"])
+    .size()
+    .unstack(fill_value=0)
+    .sort_index()
+)
+
+st.subheader("🏙️ Registros por Lider")
 
 st.line_chart(
     CF,
+    use_container_width=True
+)
+
+st.subheader("📊 Estado PWS por fecha")
+
+st.bar_chart(
+    CR,
     use_container_width=True
 )
 

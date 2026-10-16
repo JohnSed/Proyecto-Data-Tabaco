@@ -28,7 +28,3 @@ print("Día con menos registros:", CF.idxmin())
 print("Menor cantidad de registros por fecha:", CF.min())
 Categorias=DN["Tipo Visita"].value_counts()
 print("Cantidad de registros por tipo de Visita:", Categorias)
-st.set_page_config(page_title="Análisis de Datos Preventa", page_icon="📊", layout="wide")
-@st.cache_data
-def get_data():
-    return DN
